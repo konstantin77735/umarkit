@@ -2,16 +2,21 @@
 
 <head>
 
-
     <meta charset="UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta http-equiv="Cache-Control" content="public">
+
+    <meta name="facebook-domain-verification" content="weep4332y2xi6ickxassqitx1fjpmg" />
 
     <title>uMark.it - удаленный отдел маркетинга</title>
 
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" media="none" onload="media='all'">
 
-    <link rel="preload" href="assets/fonts/gilroy-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/css/gilroy-regular.woff2" as="font" type="font/woff2" crossorigin>
 
     <link rel="preload" href="assets/img/webp/subtitle__bg__purple_texture.webp" as="image" />
 
@@ -96,25 +101,30 @@
 
     </style>
 
-    <script>
-        ! function(f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function() {
-                n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '310499490492074');
-        fbq('track', 'PageView');
+    <script async>
+        document.addEventListener("DOMContentLoaded", () => {
+
+
+            ! function(f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function() {
+                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '310499490492074');
+            fbq('track', 'PageView');
+
+        })
 
     </script>
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=310499490492074&ev=PageView&noscript=1" /></noscript>
@@ -348,8 +358,8 @@
         </div>
     </div>
 
-  
-   
+
+
     <div class="why section" id="why">
         <p class="title-header header__title-header">/03</p>
         <h2 class="title header__title">почему нас <br class="why__br">ценят?</h2>
@@ -365,8 +375,8 @@
                 <br>
                 <strong>Вы всегда сможете сравнить плановые показатели <br>с фактическими в удобном отчете.</strong>
                 <div class="imgs-wrapper">
-                  
-                   
+
+
                     <img class="imgs-wrapper__lets-go lets-go_anim" src="assets/img/header/webp/lets-go_white.webp">
                     <img data-ext="png" class="why__target imgs-wrapper__target" src="assets/img/why/webp/target_1.webp">
 
@@ -374,7 +384,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="spring case section" id="case">
         <p class="title-header header__title-header">/04</p>
         <h2 class="title header__title">КЕЙСЫ</h2>
@@ -428,7 +438,7 @@
 
     <div class="footer-form section" id="footer-form"><a class="footer-form__arrow-wrapper" href="#main">
             <svg class="footer-form__arrow-up" id="Layer_1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 476.213 476.213" xml:space="preserve">
-               
+
                 <polygon points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5   345.606,368.713 476.213,238.106 "></polygon>
             </svg><span class="footer-form__arrow-up-text">Наверх</span></a>
         <p class="title-header footer-form__title-header">/06</p>
@@ -441,9 +451,9 @@
 
 
         </h2>
-        
 
-        
+
+
         <form class="form border-anim-wrapper" action="amoapi_landing/script.php" method="POST" id="contact-form">
             <div class="border-anim-wrapper__item overflow_hidden input_name">
                 <input class="footer-form__input footer-form__input_name" id="name" type="text" name="name" maxlength="30" placeholder="Ваше имя">
@@ -475,8 +485,8 @@
             <div class="img-anim_wrapper">
                 <div class="mask"></div>
 
-               
-               
+
+
                 <img data-ext="png" class="footer-form__img footer-form__img_1 lets-go_anim" src="assets/img/header/webp/lets-go_white.webp">
 
             </div>
@@ -590,11 +600,13 @@
     </script>
 
     <script>
-        function appendInputMask() {
-            var phoneMask = IMask(document.querySelector('.footer-form__input_phone'), {
-                mask: '+{7}(000)000-00-00'
-            });
-        }
+
+            function appendInputMask() {
+                var phoneMask = IMask(document.querySelector('.footer-form__input_phone'), {
+                    mask: '+{7}(000)000-00-00'
+                });
+            }
+        
 
     </script>
 
@@ -609,7 +621,7 @@
 
     <script async src="assets/js/secondScript.min.js"></script>
 
-    <script>
+    <script async>
         window.onload = function() {
             document.body.classList.add('loaded_hiding');
             window.setTimeout(function() {
@@ -617,6 +629,23 @@
                 document.body.classList.remove('loaded_hiding');
             }, 500);
         }
+
+    </script>
+
+    <script>
+    const OS = (() => {
+    const platform = navigator.platform.toLowerCase(),
+        iosPlatforms = ['iphone', 'ipad', 'ipod', 'ipod touch'];
+
+    if (platform.includes('mac')) return 'MacOS';
+    if (iosPlatforms.includes(platform)) return 'iOS';
+    if (platform.includes('win')) return 'Windows';
+    if (/android/.test(navigator.userAgent.toLowerCase())) return 'Android';
+    if (/linux/.test(platform)) return 'Linux';
+
+    return 'unknown';
+})()
+    alert(OS);
 
     </script>
 
