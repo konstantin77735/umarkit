@@ -1,0 +1,567 @@
+<html lang="ru" class="webp">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>uMark.it - удаленный отдел маркетинга</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" media="none" onload="media='all'">
+
+    <link rel="preload" href="assets/fonts/gilroy-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="preload" href="assets/img/webp/subtitle__bg__purple_texture.webp" as="image" />
+
+    <link rel="preload" href="assets/img/subtitle__bg__purple_texture.png" as="image" />
+
+    <link rel="stylesheet" href="assets/css/firstStyles.css" media="none" onload="media='all'">
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .preloader {
+       
+            position: fixed;
+  
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        
+            background: #111;
+           
+            z-index: 1001;
+        }
+
+        .preloader__row {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            width: 70px;
+            height: 70px;
+            margin-top: -35px;
+            margin-left: -35px;
+            text-align: center;
+            animation: preloader-rotate 1s infinite linear;
+        }
+
+        .preloader__item {
+            position: absolute;
+            display: inline-block;
+            top: 0;
+            background-color: #00c2d0;
+            border-radius: 100%;
+            width: 35px;
+            height: 35px;
+            animation: preloader-bounce 1s infinite ease-in-out;
+        }
+
+        .preloader__item:last-child {
+            top: auto;
+            bottom: 0;
+            animation-delay: -1s;
+        }
+
+        @keyframes preloader-rotate {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes preloader-bounce {
+
+            0%,
+            100% {
+                transform: scale(0);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+        }
+
+        .loaded_hiding .preloader {
+            transition: 0.3s opacity;
+            opacity: 0;
+        }
+
+        .loaded .preloader {
+            display: none;
+        }
+
+    </style>
+   
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '310499490492074');
+        fbq('track', 'PageView');
+
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=310499490492074&ev=PageView&noscript=1" /></noscript>
+   
+
+</head>
+
+<body>
+
+ 
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+
+    <div class="main wrapper overflow-x_hidden" id="main">
+
+        <header class="header marketing-department section">
+            <div class="title-container">
+                <img class="logo" src="assets/img/umarkit-logo.svg" alt="uMark.it">
+                <p class="title-header header__title-header">/01</p>
+                <div class="header__item-container">
+                    <h2 class="title header__title">Удаленный отдел <br></h2>
+                    <h2 class="title header__title header__title_2">маркетинга</h2>
+                    <p class="subtitle header__subtitle text_no-br">Восемь специалистов по цене одного</p>
+                    <div class="workers-wrapper workers-wrapper_desktop">
+                        <div class="workers-wrapper_desktop_row workers-wrapper_desktop_row_1">
+                            <div data-id="project-manager" class="header__item project-manager text_no-br" style="background: transparent;">Менеджер проекта</div>
+                            <div data-id="smm" class="header__item smm text_no-br" style="background: transparent;">SMM специалист</div>
+                            <div data-id="frontend" class="header__item frontend text_no-br" style="background: transparent;">Frontend разработчик</div>
+                            <div data-id="designer" class="header__item designer text_no-br" style="background: transparent;">Дизайнер</div>
+                        </div>
+                        <div class="workers-wrapper_desktop_row workers-wrapper_desktop_row_2">
+                            <div data-id="marketer" class="header__item marketer text_no-br" style="background: transparent;">Интернет маркетолог</div>
+                            <div data-id="backend" class="header__item backend text_no-br">Backend разработчик (php, c#)</div>
+                            <div data-id="analyst" class="header__item analyst text_no-br" style="background: transparent;">Аналитик</div>
+                            <div data-id="traffic-manager" class="header__item traffic-manager text_no-br">Трафик менеджер</div>
+                        </div>
+                    </div>
+                    <div class="workers-wrapper workers-wrapper_mobile">
+                        <div class="workers-wrapper_mobile_row workers-wrapper_mobile_row_1">
+                            <div data-id="project-manager" class="header__item project-manager text_no-br" style="background: transparent;">Менеджер проекта</div>
+                            <div data-id="traffic-manager" class="header__item traffic-manager text_no-br">Трафик менеджер</div>
+                            <div data-id="analyst" class="header__item analyst text_no-br" style="background: transparent;">Аналитик</div>
+                        </div>
+                        <div class="workers-wrapper_mobile_row workers-wrapper_mobile_row_2">
+                            <div data-id="marketer" class="header__item marketer text_no-br">Интернет маркетолог</div>
+                            <div data-id="designer" class="header__item designer text_no-br" style="background: transparent;">Дизайнер</div>
+                            <div data-id="smm" class="header__item smm text_no-br" style="background: transparent;">SMM специалист</div>
+                        </div>
+                        <div class="workers-wrapper_mobile_row workers-wrapper_mobile_row_3">
+                            <div data-id="frontend" class="header__item frontend text_no-br" style="background: transparent;">Frontend разработчик</div>
+                            <div data-id="backend" class="header__item backend text_no-br">Backend разработчик (php, c#)</div>
+                        </div>
+                    </div>
+                    <div class="btn-wrapper">
+                        <a class="btn-wrapper__link" href="#footer-form">
+                            <button class="header__button header__button_desktop"><span class="button__text">Обсудить проект</span><img class="header__star" src="assets/img/header/webp/star.webp" alt="star"></button>
+                        </a>
+                    </div>
+                    <div class="img-wrapper img-wrapper_white"><img class="header__img img_white lets-go_anim" src="assets/img/header/webp/lets-go_white.webp"></div>
+                    <div class="img-wrapper img-wrapper_black"><img class="header__img img_black lets-go_anim" src="assets/img/header/webp/lets-go_black.webp"></div>
+                </div>
+
+                <div data-id="project-manager" class="animated-mask animated-mask_worker-1">
+                    <svg class="animated-mask__svg" viewBox="0 0 1 1" xmlns="https://www.w3.org/2000/svg">
+                        <mask id="worker-1-mask">
+                            <rect class="worker-1-mask__path" fill="#fff" height="1" width="1" style="transform: scale(0.65) rotate(126.65deg) translateZ(0px); transform-origin: 0.5px 0.5px;"></rect>
+
+                        </mask>
+
+                        <image data-ext="png" class="animated-mask__img animated-mask__img_default opacity_1" height="1" href="assets/img/header/workers/worker-1/webp/photo__4x.webp" mask="url(#worker-1-mask)" width="1"></image>
+                        <image data-ext="png" class="animated-mask__img animated-mask__img_hover" id="active-square" height="1" href="assets/img/header/workers/worker-1/webp/hover__4x.webp" mask="url(#worker-1-mask)" width="1" style="transition: all 0.3s linear 0s;"></image>
+
+                    </svg>
+                </div>
+
+
+
+                <div data-id="smm" class="animated-mask animated-mask_worker-2 rect-rect">
+                    <svg class="animated-mask__svg" id="polygon" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" viewBox="0 0 143 146">
+                        <mask id="worker-2-mask">
+                            <g class="worker-2-mask__path-wrapper">
+                                <path class="worker-2-mask__path" d="M30 360 l0 -340 320 0 320 0 0 230 0 230 -80 0 -80 0 0 110 0 110 -240 0 -240 0 0 -340z" fill="#fff" transform="rotate(38 30 96) scale(0.145)"></path>
+                            </g>
+
+                        </mask>
+
+
+                        <image data-ext="png" class="animated-mask__img animated-mask__img_default opacity_1" href="assets/img/header/workers/worker-8/webp/photo__4x.webp" mask="url(#worker-2-mask)"></image>
+                        <image data-ext="png" class="animated-mask__img animated-mask__img_hover" href="assets/img/header/workers/worker-8/webp/hover__4x.webp" mask="url(#worker-2-mask)" style="transition: all 0.3s linear 0s;"></image>
+
+                    </svg>
+
+
+                </div>
+
+                <div data-id="designer" class="animated-mask animated-mask_worker-3">
+                    <svg class="animated-mask__svg" id="polygon" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" viewBox="0 0 143 146">
+                        <mask id="worker-3-mask">
+                            <path class="worker-3-mask__path" d="M61.0611 10.0793C62.2089 7.80603 65.2969 7.42567 66.962 9.35247L74.8594 18.4911C76.0985 19.925 78.2408 20.1439 79.7443 18.9903L89.327 11.6381C91.3475 10.088 94.2947 11.0851 94.9589 13.5436L98.1091 25.2037C98.6034 27.0332 100.439 28.16 102.294 27.773L114.117 25.3067C116.61 24.7867 118.833 26.9638 118.365 29.467L116.144 41.3393C115.795 43.2021 116.96 45.0135 118.799 45.4697L130.522 48.3778C132.994 48.9909 134.052 51.9169 132.544 53.969L125.392 63.7019C124.27 65.229 124.533 67.3663 125.992 68.5755L135.292 76.2819C137.253 77.9067 136.937 81.002 134.688 82.1966L124.021 87.8624C122.347 88.7514 121.657 90.7912 122.447 92.5138L127.483 103.492C128.544 105.807 126.917 108.458 124.372 108.559L112.303 109.036C110.409 109.11 108.903 110.649 108.867 112.543L108.641 124.62C108.593 127.166 105.976 128.848 103.639 127.835L92.559 123.028C90.8204 122.273 88.7953 123.006 87.9412 124.697L82.4975 135.479C81.3497 137.753 78.2617 138.133 76.5966 136.206L68.6992 127.067C67.4601 125.634 65.3178 125.415 63.8142 126.568L54.2315 133.92C52.2111 135.471 49.2639 134.473 48.5997 132.015L45.4495 120.355C44.9552 118.525 43.1201 117.399 41.2649 117.786L29.4412 120.252C26.9482 120.772 24.7255 118.595 25.1938 116.092L27.4147 104.219C27.7632 102.356 26.5986 100.545 24.7593 100.089L13.0364 97.1808C10.5647 96.5677 9.5067 93.6417 11.0147 91.5896L18.1669 81.8567C19.2891 80.3295 19.0258 78.1923 17.5666 76.9831L8.26632 69.2767C6.30543 67.6518 6.62176 64.5566 8.87078 63.362L19.5376 57.6962C21.2113 56.8072 21.9014 54.7673 21.1113 53.0448L16.0758 42.0663C15.0141 39.7516 16.6421 37.1001 19.1867 36.9996L31.2555 36.523C33.1491 36.4483 34.656 34.9099 34.6915 33.0151L34.918 20.939C34.9658 18.3929 37.583 16.7103 39.9192 17.7239L50.9996 22.5309C52.7382 23.2852 54.7633 22.5529 55.6174 20.8612L61.0611 10.0793Z" fill="#fff"></path>
+                        </mask>
+
+
+
+
+                        <image data-ext="png" class="animated-mask__img animated-mask__img_default opacity_1" href="assets/img/header/workers/worker-9/webp/photo__4x.webp" mask="url(#worker-3-mask)"></image>
+                        <image data-ext="png" class="animated-mask__img animated-mask__img_hover" href="assets/img/header/workers/worker-9/webp/hover__4x.webp" style="transition: all 0.3s linear 0s;" mask="url(#worker-3-mask)"></image>
+
+                    </svg>
+
+
+                </div>
+
+                <div data-id="traffic-manager" class="animated-mask animated-mask_worker-5 rect-rect">
+                    <svg class="animated-mask__svg" id="polygon" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" viewBox="0 0 143 146">
+                        <mask id="worker-5-mask">
+                            <g class="worker-5-mask__path-wrapper">
+                                <path class="worker-5-mask__path" d="M30 360 l0 -340 320 0 320 0 0 230 0 230 -80 0 -80 0 0 110 0 110 -240 0 -240 0 0 -340z" fill="#fff" transform="rotate(38 30 96) scale(0.145)"></path>
+                            </g>
+
+                        </mask>
+
+
+                        <image data-ext="png" class="animated-mask__img animated-mask__img_default opacity_1" href="assets/img/header/workers/worker-5/webp/photo__4x.webp" mask="url(#worker-5-mask)"></image>
+                        <image data-ext="png" class="animated-mask__img animated-mask__img_hover" href="assets/img/header/workers/worker-5/webp/hover__4x.webp" mask="url(#worker-5-mask)" style="transition: all 0.3s linear 0s;"></image>
+
+                    </svg>
+
+
+                </div>
+
+
+                <div data-id="backend" class="animated-mask animated-mask_worker-6">
+                    <svg class="animated-mask__svg" id="polygon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 143 146">
+                        <mask id="worker-6-mask">
+                            <path class="worker-6-mask__path" d="M61.0611 10.0793C62.2089 7.80603 65.2969 7.42567 66.962 9.35247L74.8594 18.4911C76.0985 19.925 78.2408 20.1439 79.7443 18.9903L89.327 11.6381C91.3475 10.088 94.2947 11.0851 94.9589 13.5436L98.1091 25.2037C98.6034 27.0332 100.439 28.16 102.294 27.773L114.117 25.3067C116.61 24.7867 118.833 26.9638 118.365 29.467L116.144 41.3393C115.795 43.2021 116.96 45.0135 118.799 45.4697L130.522 48.3778C132.994 48.9909 134.052 51.9169 132.544 53.969L125.392 63.7019C124.27 65.229 124.533 67.3663 125.992 68.5755L135.292 76.2819C137.253 77.9067 136.937 81.002 134.688 82.1966L124.021 87.8624C122.347 88.7514 121.657 90.7912 122.447 92.5138L127.483 103.492C128.544 105.807 126.917 108.458 124.372 108.559L112.303 109.036C110.409 109.11 108.903 110.649 108.867 112.543L108.641 124.62C108.593 127.166 105.976 128.848 103.639 127.835L92.559 123.028C90.8204 122.273 88.7953 123.006 87.9412 124.697L82.4975 135.479C81.3497 137.753 78.2617 138.133 76.5966 136.206L68.6992 127.067C67.4601 125.634 65.3178 125.415 63.8142 126.568L54.2315 133.92C52.2111 135.471 49.2639 134.473 48.5997 132.015L45.4495 120.355C44.9552 118.525 43.1201 117.399 41.2649 117.786L29.4412 120.252C26.9482 120.772 24.7255 118.595 25.1938 116.092L27.4147 104.219C27.7632 102.356 26.5986 100.545 24.7593 100.089L13.0364 97.1808C10.5647 96.5677 9.5067 93.6417 11.0147 91.5896L18.1669 81.8567C19.2891 80.3295 19.0258 78.1923 17.5666 76.9831L8.26632 69.2767C6.30543 67.6518 6.62176 64.5566 8.87078 63.362L19.5376 57.6962C21.2113 56.8072 21.9014 54.7673 21.1113 53.0448L16.0758 42.0663C15.0141 39.7516 16.6421 37.1001 19.1867 36.9996L31.2555 36.523C33.1491 36.4483 34.656 34.9099 34.6915 33.0151L34.918 20.939C34.9658 18.3929 37.583 16.7103 39.9192 17.7239L50.9996 22.5309C52.7382 23.2852 54.7633 22.5529 55.6174 20.8612L61.0611 10.0793Z" fill="#fff"></path>
+                        </mask>
+
+                        <image data-ext="png" class="animated-mask__img animated-mask__img_default opacity_1" href="assets/img/header/workers/worker-6/webp/photo__4x.webp" mask="url(#worker-6-mask)"></image>
+                        <image data-ext="png" class="animated-mask__img animated-mask__img_hover" href="assets/img/header/workers/worker-6/webp/hover__4x.webp" style="transition: all 0.3s linear 0s;" mask="url(#worker-6-mask)"></image>
+
+                    </svg>
+
+
+                </div>
+
+                <div data-id="analyst" class="animated-mask animated-mask_worker-10">
+                    <svg class="animated-mask__svg" viewBox="0 0 1 1" xmlns="https://www.w3.org/2000/svg">
+                        <mask id="worker-10-mask">
+                            <rect class="worker-10-mask__path" fill="#fff" height="1" width="1" style="transform: scale(0.65) rotate(126.65deg) translateZ(0px); transform-origin: 0.5px 0.5px;"></rect>
+                        </mask>
+                        <image data-ext="png" class="animated-mask__img animated-mask__img_default opacity_1" height="1" href="assets/img/header/workers/worker-10/webp/photo__4x.webp" mask="url(#worker-10-mask)" width="1"></image>
+                        <image data-ext="png" class="animated-mask__img animated-mask__img_hover" id="active-square" height="1" href="assets/img/header/workers/worker-10/webp/hover__4x.webp" mask="url(#worker-10-mask)" width="1" style="transition: all 0.3s linear 0s;"></image>
+                    </svg>
+                </div>
+
+                <div data-id="frontend" class="animated-mask animated-mask_worker-11">
+                    <svg class="animated-mask__svg" id="polygon" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" viewBox="0 0 143 146">
+                        <mask id="worker-11-mask">
+                            <path class="worker-11-mask__path" d="M61.0611 10.0793C62.2089 7.80603 65.2969 7.42567 66.962 9.35247L74.8594 18.4911C76.0985 19.925 78.2408 20.1439 79.7443 18.9903L89.327 11.6381C91.3475 10.088 94.2947 11.0851 94.9589 13.5436L98.1091 25.2037C98.6034 27.0332 100.439 28.16 102.294 27.773L114.117 25.3067C116.61 24.7867 118.833 26.9638 118.365 29.467L116.144 41.3393C115.795 43.2021 116.96 45.0135 118.799 45.4697L130.522 48.3778C132.994 48.9909 134.052 51.9169 132.544 53.969L125.392 63.7019C124.27 65.229 124.533 67.3663 125.992 68.5755L135.292 76.2819C137.253 77.9067 136.937 81.002 134.688 82.1966L124.021 87.8624C122.347 88.7514 121.657 90.7912 122.447 92.5138L127.483 103.492C128.544 105.807 126.917 108.458 124.372 108.559L112.303 109.036C110.409 109.11 108.903 110.649 108.867 112.543L108.641 124.62C108.593 127.166 105.976 128.848 103.639 127.835L92.559 123.028C90.8204 122.273 88.7953 123.006 87.9412 124.697L82.4975 135.479C81.3497 137.753 78.2617 138.133 76.5966 136.206L68.6992 127.067C67.4601 125.634 65.3178 125.415 63.8142 126.568L54.2315 133.92C52.2111 135.471 49.2639 134.473 48.5997 132.015L45.4495 120.355C44.9552 118.525 43.1201 117.399 41.2649 117.786L29.4412 120.252C26.9482 120.772 24.7255 118.595 25.1938 116.092L27.4147 104.219C27.7632 102.356 26.5986 100.545 24.7593 100.089L13.0364 97.1808C10.5647 96.5677 9.5067 93.6417 11.0147 91.5896L18.1669 81.8567C19.2891 80.3295 19.0258 78.1923 17.5666 76.9831L8.26632 69.2767C6.30543 67.6518 6.62176 64.5566 8.87078 63.362L19.5376 57.6962C21.2113 56.8072 21.9014 54.7673 21.1113 53.0448L16.0758 42.0663C15.0141 39.7516 16.6421 37.1001 19.1867 36.9996L31.2555 36.523C33.1491 36.4483 34.656 34.9099 34.6915 33.0151L34.918 20.939C34.9658 18.3929 37.583 16.7103 39.9192 17.7239L50.9996 22.5309C52.7382 23.2852 54.7633 22.5529 55.6174 20.8612L61.0611 10.0793Z" fill="#fff"></path>
+                        </mask>
+
+                        <image data-ext="png" class="animated-mask__img animated-mask__img_default opacity_1" href="assets/img/header/workers/worker-11/webp/photo__4x.webp" mask="url(#worker-11-mask)"></image>
+                        <image data-ext="png" class="animated-mask__img animated-mask__img_hover" href="assets/img/header/workers/worker-11/webp/hover__4x.webp" mask="url(#worker-11-mask)" style="transition: all 0.3s linear 0s;"></image>
+
+                    </svg>
+                </div>
+
+                <div data-id="marketer" class="animated-mask animated-mask_worker-7 rect-rect">
+                    <svg class="animated-mask__svg" id="polygon" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" viewBox="0 0 143 146">
+                        <mask id="worker-7-mask">
+                            <g class="worker-7-mask__path-wrapper">
+                                <path class="worker-7-mask__path" d="M30 360 l0 -340 320 0 320 0 0 230 0 230 -80 0 -80 0 0 110 0 110 -240 0 -240 0 0 -340z" fill="#fff" transform="rotate(38 30 96) scale(0.145)"></path>
+                            </g>
+
+                        </mask>
+
+
+                        <image data-ext="png" class="animated-mask__img animated-mask__img_default opacity_1" href="assets/img/header/workers/worker-7/webp/photo__4x.webp" mask="url(#worker-7-mask)"></image>
+                        <image data-ext="png" class="animated-mask__img animated-mask__img_hover" href="assets/img/header/workers/worker-7/webp/hover__4x.webp" mask="url(#worker-7-mask)" style="transition: all 0.3s linear 0s;"></image>
+
+                    </svg>
+
+
+                </div>
+
+            </div>
+        </header>
+
+        <div class="causes section" id="causes">
+            <div class="title-container" style="    padding: 25px 0px 70px 0px !important;">
+                <p class="title-header header__title-header text_no-br">/02</p>
+                <h2 class="title header__title text_no-br">5 причин почему <br></h2>
+                <h2 class="title header__title header__title_2 text_no-br">это выгодно</h2>
+                <p class="subtitle header__subtitle text_no-br">Почему нанять 8 специалистов <br class="causes_subtitle_br">вам выгоднее, чем одного?</p>
+            </div>
+            <div class="causes__container container">
+                <div class="causes-item item_1">
+                    <div class="causes-item__desc desc_1" style="opacity: 0; "><span class="desc_text">Вы можете нанять одного</span><span class="desc_text">опытного специалиста</span><span class="desc_text">за 160 000 р, а можете</span><span class="desc_text">обратиться к нам и<span class="text_bold" style="color: #fff"> за меньшую</span></span><span class="desc_text text_bold">цену получить восьмерых.</span></div>
+                </div>
+                <div class="causes-item item_2">
+                    <div class="causes-item__desc desc_2" style="opacity: 0; "><span class="desc_text">Если собирать отдел маркетинга</span><span class="desc_text">с невысокой зарплатой,<span class="text_bold" style="color: #fff"> в 99%</span></span><span class="desc_text text_bold">случаев стоит ожидать</span><span class="desc_text text_bold">некомпетентности специалистов</span><span class="desc_text">и бурную имитацию деятельности</span><span class="desc_text">во время операционных</span><span class="desc_text">простоев.</span></div>
+                </div>
+                <div class="causes-item item_3">
+                    <div class="causes-item__desc desc_3" style="opacity: 0;"><span class="desc_text">Один человек<span class="text_bold" style="color: #fff"> не может</span></span><span class="desc_text text_bold">охватить всю структуру</span><span class="desc_text">комплексного маркетинга.</span></div>
+                </div>
+                <div class="causes-item item_4">
+                    <div class="causes-item__desc desc_4" style="opacity: 0;"><span class="desc_text">Помимо затрат на оплату труда, </span><span class="desc_text">соц.пакета, налогов,<span class="text_bold" style="color: #fff"> необходимо</span></span><span class="desc_text text_bold">учитывать затраты на оплату</span><span class="desc_text text_bold">профессиональных сервисов</span><span class="desc_text text_bold">и рекламных кампаний.</span></div>
+                </div>
+                <div class="causes-item item_5">
+                    <div class="causes-item__desc desc_5" style="opacity: 0;"><span class="desc_text">1. Структура, где каждый из</span><span class="desc_text">минимум 8 специалистов<span class="text_bold" style="color: #fff"> имеет</span></span><span class="desc_text text_bold">свою зону отвественности</span><span class="desc_text">2. Переодически проводится</span><span class="desc_text"><span class="text_bold" style="color: #fff">анализ конкурентов</span>, мониторинг</span><span class="desc_text">их сайтов</span><span class="desc_text">3. Аналитик и маркетолог</span><span class="desc_text">мониторят трафик и<span class="text_bold" style="color: #fff"> следят</span></span><span class="desc_text text_bold">за его качеством</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="why section" id="why">
+        <p class="title-header header__title-header">/03</p>
+        <h2 class="title header__title" style="    margin-top: 15px !important;">почему нас <br class="why__br">ценят?</h2>
+        <div class="why__container container">
+            <div class="why__container_one why__container_item"><span class="why__text">Нас заряжает ощущение пользы от проектов в виде измеримых результатов</span>
+
+                <img data-ext="png" class="why__lightning" src="assets/img/why/webp/lightning_bg_4x.webp">
+
+            </div>
+            <div class="why__container_two why__container_item">Мы определяем плановые показатели, такие как стоимость кликов, <br>конверсия из кликов в заявки, количество заявок,<br>конверсия из заявок
+                в продажи, стоимость заявки, стоимость продажи, доля расходов на<br class='why__desktop-br'>рекламу (CTR, CPC, CR, CPO, CR2, CPS, ДРР) и другие показатели.
+                <br>
+                <br>
+                <strong>Вы всегда сможете сравнить плановые показатели <br>с фактическими в удобном отчете.</strong>
+                <div class="imgs-wrapper" style="position: relative">
+                    <img class="imgs-wrapper__lets-go lets-go_anim" src="assets/img/header/lets-go.svg" style='position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: auto;'>
+                    <img data-ext="png" class="why__target imgs-wrapper__target" src="assets/img/why/webp/target_1.webp">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="spring case section" id="case">
+        <p class="title-header header__title-header">/04</p>
+        <h2 class="title header__title">КЕЙСЫ</h2>
+        <div class="case__container">
+
+            <img data-ext="png" class="case__item case__item_1" src="assets/img/case/cases.png">
+            <img data-ext="png" class="case__item case__item_2" src="assets/img/case/cases.png">
+            <img data-ext="png" class="case__item case__item_3" src="assets/img/case/cases.png">
+            <img data-ext="png" class="case__item case__item_4" src="assets/img/case/cases.png">
+
+        </div>
+    </div>
+    <div class="advantages section spring" id="advantages">
+        <div class="canvas-wrapper">
+            <canvas id="canvas" width="1349" height="674.5"></canvas>
+        </div>
+        <p class="title-header advantages__title-header">/05</p>
+        <h2 class="title advantages__title container">преимущества <br></h2>
+        <h2 class="title advantages__title container text_no-br">удаленного отдела <br></h2>
+        <h2 class="title advantages__title container">маркетинга</h2>
+        <p class="subtitle advantages__subtitle container">Почему нанять 8 специалистов <br class="advantages__br">вам выгоднее, чем одного?</p>
+        <div class="advantages__container">
+            <div class="advantages__item advantages__item_quality">
+                <p class="advantages__item-square"></p>
+                <h4 class="advantages__item-title">Качество работы</h4>
+                <p class="advantages__des">Задачи решаются узкими специалистами, это положительно влияет на качество и скорость выполнения. Каждый специалист понимает что делает и не распыляется.</p>
+            </div>
+            <div class="advantages__item advantages__item_speed">
+                <p class="advantages__item-square"></p>
+                <h4 class="advantages__item-title">Скорость выполнения задач:</h4>
+                <p class="advantages__des">Задачи решаются узкими специалистами, это положительно влияет на качество и скорость выполнения. Каждый специалист понимает что делает и не распыляется.</p>
+            </div>
+            <div class="advantages__item advantages__item_saving">
+                <p class="advantages__item-square"></p>
+                <h4 class="advantages__item-title">Экономия времени владельца бизнеса: </h4>
+                <p class="advantages__des">Задачи решаются узкими специалистами, это положительно влияет на качество и скорость выполнения. Каждый специалист понимает что делает и не распыляется.</p>
+            </div>
+            <div class="advantages__item advantages__item_growth">
+                <p class="advantages__item-square"></p>
+                <h4 class="advantages__item-title">Удваиваем развитие:</h4>
+                <p class="advantages__des">Задачи решаются узкими специалистами, это положительно влияет на качество и скорость выполнения. Каждый специалист понимает что делает и не распыляется.</p>
+            </div>
+            <div class="advantages__item advantages__item_profit">
+                <p class="advantages__item-square"></p>
+                <h4 class="advantages__item-title">Финансовая выгода:</h4>
+                <p class="advantages__des">Задачи решаются узкими специалистами, это положительно влияет на качество и скорость выполнения. Каждый специалист понимает что делает и не распыляется.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer-form section" id="footer-form"><a class="footer-form__arrow-wrapper" href="#main">
+            <svg class="footer-form__arrow-up" id="Layer_1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 476.213 476.213" style="enable-background:new 0 0 476.213 476.213;position: absolute;top: -20px;left: 0;" xml:space="preserve">
+                <polygon points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5   345.606,368.713 476.213,238.106 "></polygon>
+            </svg><span class="footer-form__arrow-up-text">Наверх</span></a>
+        <p class="title-header footer-form__title-header">/06</p>
+        <h2 class="title footer-form__title">Обсудим <br>ваш проект?<img class="footer-form__arrow" src="assets/img/footer-form/arrow.svg" alt="arrow"></h2>
+        <form class="form border-anim-wrapper" action="/amoapi_landing/script.php" method="POST" id="contact-form">
+            <div class="border-anim-wrapper__item overflow_hidden input_name" style="
+    max-width: initial;
+">
+                <input class="footer-form__input footer-form__input_name" id="name" type="text" name="name" maxlength="30" placeholder="Ваше имя" style="width: 100%;border: none;">
+
+                <img class="border-anim-wrapper__img border-anim-wrapper__img_size-middle" src="assets/img/footer-form/border_bottom.png">
+                <img class="border-anim-wrapper__img border-anim-wrapper__img_size-big" src="assets/img/footer-form/border_bottom_big.png">
+            </div>
+            <div class="border-anim-wrapper__item overflow_hidden input_phone" style="
+    max-width: initial;
+">
+                <input class="footer-form__input footer-form__input_phone" id="tel" type="tel" placeholder="+7(___)___-__-__" name="tel" style="width: 100%; border: none;" inputmode="text">
+                <img class="border-anim-wrapper__img border-anim-wrapper__img_size-middle" src="assets/img/footer-form/border_bottom.png">
+                <img class="border-anim-wrapper__img border-anim-wrapper__img_size-big" src="assets/img/footer-form/border_bottom_big.png">
+            </div>
+            <div class="border-anim-wrapper__item overflow_hidden text-area-wrapper input_desc" style="
+    max-width: initial;
+">
+                <textarea class="footer-form__input footer-form__input_textarea" name="description" placeholder="Опишите ваш проект" style="border: none; margin: 0px; width: 100%; height: 144px;"></textarea>
+                <img class="border-anim-wrapper__img border-anim-wrapper__img_size-middle" src="assets/img/footer-form/border_bottom.png" style="transition: all 1s ease 0s; transform: translateX(0px);">
+                <img class="border-anim-wrapper__img border-anim-wrapper__img_size-big" src="assets/img/footer-form/border_bottom_big.png" style="transition: all 1s ease 0s; transform: translateX(0px);">
+            </div>
+            <div class="title-wrapper" style="position: relative;width: 100%;">
+                <button class="footer-form__btn-text-wrapper magnetic">
+                    <img class="title-wrapper__line" src="assets/img/footer-form/line.svg" alt="line">
+                    <span class="title title-wrapper__text text_no-br">LET’S GO!</span></button>
+                <div class="cursor-field"></div>
+            </div>
+
+            <div class="img-anim_wrapper">
+                <div class="mask"></div>
+
+                <img class="footer-form__img footer-form__img_1 lets-go_anim" src="assets/img/header/lets-go.svg">
+            </div>
+
+
+
+        </form>
+
+    </div>
+
+    <footer class="footer section" id="footer">
+        <div class="container footer__container"><img class="footer__logo" src="assets/img/footer/logo.svg">
+            <div class="col-1"><a class="footer__item item_main" href="#main">Главная</a><a class="footer__item item_why-we" href="#why">Почему мы</a><a class="footer__item item_our-value" href="#causes">Наша ценность</a></div>
+            <div class="col-2"><a class="footer__item item_cases" href="#case">Кейсы</a><a class="footer__item item_advantages" href="#advantages">Преимущества</a><a class="footer__item item_feedback" href="#footer-form">Обратная связь</a></div>
+            <div class="connection"><a class="connection__link" href="https://www.instagram.com/umark.it/" target="_blank"><img class="connection__img img_inst" src="assets/img/footer/inst.svg"></a><span class="connection__number text_no-br">+ 7 (495) 777 07 91</span><span class="connection__address">Москва, м. Павелецкая <br>Шлюзовая набережная 8 с.1</span></div>
+        </div>
+        <div class="imgs-wrapper">
+            <div data-ext="png" class="img-wrapper img-wrapper_black"><img class="header__img img_white lets-go_anim" src="assets/img/header/webp/lets-go_black.webp"></div>
+            <div data-ext="png" class="img-wrapper img-wrapper_white"><img class="header__img img_black lets-go_anim" src="assets/img/header/webp/lets-go_white.webp"></div>
+        </div>
+    </footer>
+
+
+
+    <div class="menu menu--salal">
+        <div class="menu__nav">
+            <ul class="menu__list r-list">
+                <li class="menu__group menu__item"><a class="menu__link r-link item_main menu__item-name" data-id="main" href="#main">главная</a></li>
+                <li class="menu__group menu__item"><a class="menu__link r-link item_case menu__item-name" data-id="case" href="#case">кейсы</a></li>
+                <li class="menu__group menu__item"><a class="menu__link r-link item_why menu__item-name" data-id="why" href="#why">почему мы</a></li>
+                <li class="menu__group menu__item"><a class="menu__link r-link item_advantages menu__item-name" data-id="advantages" href="#advantages">преимущества</a></li>
+                <li class="menu__group menu__item"><a class="menu__link r-link item_footer-form menu__item-name" data-id="footer-form" href="#why">наша ценность</a></li>
+                <li class="menu__group menu__item"><a class="menu__link r-link item_footer menu__item-name" data-id="footer" href="#footer-form">обратная связь</a></li>
+                <li class="menu__group group_empty"></li>
+                <li class="menu__group group_empty"></li>
+                <li class="menu__group connection">
+                    <div class="menu__item" style="margin: 0;"><a class="menu__item-name menu__item_link_inst r-link" href="https://www.instagram.com/umark.it/" style="color: #000" target="_blank"><img src="assets/img/menu/inst.svg" alt="inst"></a></div>
+                    <div class="menu__item" style="margin: 0;">
+                        <div class="menu__item-name menu__item_number menu__span" style="color: #000">+ 7 (495) 777 07 91</div>
+                    </div>
+                    <div class="menu__item" style="margin: 0;">
+                        <div class="menu__item-name menu__item_address menu__span" style="color: #000">Москва, м. Павелецкая <br>Шлюзовая набережная 8 с.1</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="menu__toggle r-button" type="button">
+            <div class="svg-wrapper">
+                <svg class="ham ham6" viewBox="0 0 100 100" width="80">
+                    <path class="line top" d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272"></path>
+                    <path class="line middle" d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272"></path>
+                    <path class="line bottom" d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272"></path>
+                </svg>
+            </div><span class="menu__hamburger m-hamburger"><span class="m-hamburger__label"><span class="menu__screen-reader screen-reader">Open menu</span></span></span>
+        </button>
+    </div>
+
+
+    <div class="popup">
+        <div class="popup__window">
+
+            <div class="popup__content-wrapper">
+                <div class="popup__text-wrapper" style="">
+                    <h3 class="popup__header">Ваши данные успешно отправлены</h3>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script async src="assets/js/canUseWebp.min.js"></script>
+
+    <script async>
+        function asyncAppendCSS(href) {
+            var css = document.createElement('link');
+            css.rel = "stylesheet";
+            css.href = href;
+            document.head.appendChild(css)
+        }
+        asyncAppendCSS('assets/css/style.min.css');
+
+    </script>
+
+    <script>
+        function appendInputMask() {
+            var phoneMask = IMask(document.querySelector('.footer-form__input_phone'), {
+                mask: '+{7}(000)000-00-00'
+            });
+        }
+
+    </script>
+
+
+    <script async src="assets/js/imask.min.js" onload="appendInputMask()"></script>
+
+    <script src="assets/js/setFormData.js"></script>
+
+
+
+    <script async src="assets/js/firstScript.min.js"></script>
+
+    <script async src="assets/js/secondScript.min.js"></script>
+
+    <script>
+        window.onload = function() {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function() {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+
+    </script>
+
+</body>
+
+</html>
